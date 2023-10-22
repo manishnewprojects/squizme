@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Guess the state</title>
+ 
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Include your custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/universal.css">
+
+    <title>- from MV</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+
+
+</head>
+<body onload="state_chk()">
+    <!-- Create a Bootstrap container for content -->
+     <div class="container mt-5">
+        <!-- Create a Bootstrap jumbotron for the banner -->
+        <div class="jumbotron">
+            <h1 class="display-4">Which state?</h1>
+            <img src="images/us-flag.jpg" alt="US Flag" class="img-fluid rounded-circle" style="max-width: 100px;">
+        </div>
+
+       
+        <!-- Add Bootstrap styles to your content -->
+
+        <div id="answer_header">
+            <p id="header">Here are three facts about a US state.
+            Can you guess the state? (3 attempts)</p>
+        </div>
+     
+
+        <!-- Add Bootstrap alert for feedback -->
+        <div id="feedback" class="alert mt-3"></div>
+        <div id="attempts" class="mt-3"></div> 
+
+        <div id="intro">
+            <ol id="fact-list"> 
+                <!-- auto-populated list goes here -->
+            </ol>
+        </div>
+
+        <div id="answer_and_results">
+            <!-- Add Bootstrap form elements -->
+            <div class="form-group">
+                <input type="text" id="stateInput" list="states" placeholder="Type a state..." value="">
+                <datalist id="states"></datalist>
+            </div>
+            <button id="selectButton" class="btn btn-primary">Select</button>
+        </div>
+        
+    </div>
+
+    <!-- Include Bootstrap JavaScript and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+      <!-- Include Moment.js from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <!-- Include Moment-Timezone.js from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.36/moment-timezone-with-data.min.js"></script>
+
+    <!-- Include your custom JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/script.js"></script>
+     
+
+   
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* styles/main.module.css */
+
+body {
+  font-family: verdana, sans-serif;
+}
+
+
+#feedback {
+  display: none;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.green-check {
+  color: green;
+}
+
+.red-cross {
+  color: red;
+}
+
+#intro {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#selectButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Add this CSS to your stylesheet */
+.fact {
+  padding-left: 20px; /* Adjust the value to control the level of indentation */
+  font-style: italic; /* Make the text inside the div italic */
+}
